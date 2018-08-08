@@ -72,6 +72,7 @@ module Bigcommerce
 
       def build_response_object(response)
         json = parse response.body
+        json = json[:data] if json.is_a?(Hash) && json[:data]
         if json.is_a? Array
           json.map { |obj| new obj }
         else
