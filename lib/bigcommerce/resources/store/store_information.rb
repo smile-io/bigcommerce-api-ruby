@@ -33,6 +33,9 @@ module Bigcommerce
     property :active_comparison_modules
     property :dimension_thousands_token
     property :is_price_entered_with_tax
+    property :country
+    property :first_name
+    property :last_name
 
     def self.info(params = {})
       get path.build, params
