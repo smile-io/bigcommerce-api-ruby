@@ -5,7 +5,7 @@
 module Bigcommerce
   class Country < Resource
     include Bigcommerce::ResourceActions.new(
-      uri: 'countries/%d',
+      uri: 'v2/countries/%d',
       disable: %i[create update destroy destroy_all]
     )
 

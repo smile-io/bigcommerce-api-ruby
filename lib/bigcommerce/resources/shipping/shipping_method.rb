@@ -5,7 +5,7 @@
 module Bigcommerce
   class ShippingMethod < Resource
     include Bigcommerce::ResourceActions.new(
-      uri: 'shipping/methods/%d',
+      uri: 'v2/shipping/methods/%d',
       disable: %i[create update destroy destroy_all]
     )
 
