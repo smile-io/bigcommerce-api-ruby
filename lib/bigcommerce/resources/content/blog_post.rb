@@ -4,7 +4,7 @@
 
 module Bigcommerce
   class BlogPost < Resource
-    include Bigcommerce::ResourceActions.new uri: 'blog/posts/%d'
+    include Bigcommerce::ResourceActions.new uri: 'v2/blog/posts/%d'
 
     property :id
     property :url

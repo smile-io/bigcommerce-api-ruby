@@ -6,7 +6,7 @@
 
 module Bigcommerce
   class Redirect < Resource
-    include Bigcommerce::ResourceActions.new uri: 'redirects/%d'
+    include Bigcommerce::ResourceActions.new uri: 'v2/redirects/%d'
 
     property :id
     property :count

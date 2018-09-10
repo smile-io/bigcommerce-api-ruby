@@ -4,7 +4,7 @@
 
 module Bigcommerce
   class ProductImage < Resource
-    include Bigcommerce::SubresourceActions.new uri: 'products/%d/images/%d'
+    include Bigcommerce::SubresourceActions.new uri: 'v2/products/%d/images/%d'
 
     property :id
     property :count

@@ -5,7 +5,7 @@
 
 module Bigcommerce
   class Coupon < Resource
-    include Bigcommerce::ResourceActions.new uri: 'coupons/%d'
+    include Bigcommerce::ResourceActions.new uri: 'v2/coupons/%d'
 
     property :id
     property :name

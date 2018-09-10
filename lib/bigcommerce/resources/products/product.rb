@@ -4,7 +4,7 @@
 
 module Bigcommerce
   class Product < Resource
-    include Bigcommerce::ResourceActions.new uri: 'products/%d'
+    include Bigcommerce::ResourceActions.new uri: 'v2/products/%d'
 
     property :id
     property :sku

@@ -4,7 +4,7 @@
 
 module Bigcommerce
   class Order < Resource
-    include Bigcommerce::ResourceActions.new uri: 'orders/%d'
+    include Bigcommerce::ResourceActions.new uri: 'v2/orders/%d'
 
     property :id
     property :status

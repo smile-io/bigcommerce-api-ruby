@@ -4,7 +4,7 @@
 
 module Bigcommerce
   class ProductRule < Resource
-    include Bigcommerce::SubresourceActions.new uri: 'products/%d/rules/%d'
+    include Bigcommerce::SubresourceActions.new uri: 'v2/products/%d/rules/%d'
 
     property :id
     property :count

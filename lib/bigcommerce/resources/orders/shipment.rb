@@ -4,7 +4,7 @@
 
 module Bigcommerce
   class Shipment < Resource
-    include Bigcommerce::SubresourceActions.new uri: 'orders/%d/shipments/%d'
+    include Bigcommerce::SubresourceActions.new uri: 'v2/orders/%d/shipments/%d'
 
     property :id
     property :items

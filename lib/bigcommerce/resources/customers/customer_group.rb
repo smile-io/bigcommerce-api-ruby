@@ -5,7 +5,7 @@
 
 module Bigcommerce
   class CustomerGroup < Resource
-    include Bigcommerce::ResourceActions.new uri: 'customer_groups/%d'
+    include Bigcommerce::ResourceActions.new uri: 'v2/customer_groups/%d'
 
     property :id
     property :name

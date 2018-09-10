@@ -5,7 +5,7 @@
 
 module Bigcommerce
   class Brand < Resource
-    include Bigcommerce::ResourceActions.new uri: 'brands/%d'
+    include Bigcommerce::ResourceActions.new uri: 'v2/brands/%d'
 
     property :id
     property :name

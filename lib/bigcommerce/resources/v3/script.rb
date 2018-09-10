@@ -6,7 +6,7 @@
 module Bigcommerce
   module V3
     class Script < Resource
-      include Bigcommerce::ResourceActions.new uri: 'content/scripts/%s'
+      include Bigcommerce::ResourceActions.new uri: 'v3/content/scripts/%s'
 
       property :data
     end
