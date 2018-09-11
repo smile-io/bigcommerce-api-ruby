@@ -7,7 +7,7 @@ require 'securerandom'
 
 module Bigcommerce
   class Customer < Resource
-    include Bigcommerce::ResourceActions.new uri: 'customers/%d'
+    include Bigcommerce::ResourceActions.new uri: 'v2/customers/%d'
 
     property :id
     property :_authentication

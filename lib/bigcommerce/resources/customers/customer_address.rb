@@ -4,7 +4,7 @@
 
 module Bigcommerce
   class CustomerAddress < Resource
-    include Bigcommerce::SubresourceActions.new uri: 'customers/%d/addresses/%d'
+    include Bigcommerce::SubresourceActions.new uri: 'v2/customers/%d/addresses/%d'
 
     property :id
     property :customer_id

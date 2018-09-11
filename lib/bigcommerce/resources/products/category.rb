@@ -4,7 +4,7 @@
 
 module Bigcommerce
   class Category < Resource
-    include Bigcommerce::ResourceActions.new uri: 'categories/%d'
+    include Bigcommerce::ResourceActions.new uri: 'v2/categories/%d'
 
     property :id
     property :parent_id

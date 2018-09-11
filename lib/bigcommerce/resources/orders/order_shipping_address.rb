@@ -5,7 +5,7 @@
 module Bigcommerce
   class OrderShippingAddress < Resource
     include Bigcommerce::SubresourceActions.new(
-      uri: 'orders/%d/shipping_addresses/%d',
+      uri: 'v2/orders/%d/shipping_addresses/%d',
       disable: %i[create update destroy destroy_all]
     )
 
