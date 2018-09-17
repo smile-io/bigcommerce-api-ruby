@@ -24,11 +24,11 @@ module Bigcommerce
     property :phone
 
     def self.count_all(params = {})
-      get 'customers/addresses/count', params
+      get 'v2/customers/addresses/count', params
     end
 
     def self.count(customer_id, params = {})
-      get "customers/#{customer_id}/addresses/count", params
+      get "v2/customers/#{customer_id}/addresses/count", params
     end
   end
 end

@@ -16,11 +16,11 @@ module Bigcommerce
     property :country_id
 
     def self.count(country_id, params = {})
-      get "countries/#{country_id}/states/count", params
+      get "v2/countries/#{country_id}/states/count", params
     end
 
     def self.count_all(params = {})
-      get 'countries/states/count', params
+      get 'v2/countries/states/count', params
     end
   end
 end

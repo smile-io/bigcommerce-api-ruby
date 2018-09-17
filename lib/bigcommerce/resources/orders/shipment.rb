@@ -21,11 +21,11 @@ module Bigcommerce
     property :count
 
     def self.count(order_id, params = {})
-      get "orders/#{order_id}/shipments/count", params
+      get "v2/orders/#{order_id}/shipments/count", params
     end
 
     def self.count_all(params = {})
-      get 'orders/shipments/count', params
+      get 'v2/orders/shipments/count', params
     end
   end
 end

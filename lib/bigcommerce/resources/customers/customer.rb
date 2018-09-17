@@ -28,7 +28,7 @@ module Bigcommerce
     property :accepts_marketing
 
     def self.count(params = {})
-      get 'customers/count', params
+      get 'v2/customers/count', params
     end
 
     # Generate a token that can be used to log the customer into the storefront.

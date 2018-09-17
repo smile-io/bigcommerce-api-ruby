@@ -15,7 +15,7 @@ module Bigcommerce
     property :discount_rules
 
     def self.count(params = {})
-      get 'customer_groups/count', params
+      get 'v2/customer_groups/count', params
     end
   end
 end

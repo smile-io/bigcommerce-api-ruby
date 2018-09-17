@@ -21,11 +21,11 @@ module Bigcommerce
     property :date_created
 
     def self.count(product_id, params = {})
-      get "products/#{product_id}/images/count", params
+      get "v2/products/#{product_id}/images/count", params
     end
 
     def self.count_all(params = {})
-      get 'products/images/count', params
+      get 'v2/products/images/count', params
     end
   end
 end

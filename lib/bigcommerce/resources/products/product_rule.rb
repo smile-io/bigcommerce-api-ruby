@@ -21,11 +21,11 @@ module Bigcommerce
     property :conditions
 
     def self.count(product_id, params = {})
-      get "products/#{product_id}/rules/count", params
+      get "v2/products/#{product_id}/rules/count", params
     end
 
     def self.count_all(params = {})
-      get 'products/rules/count', params
+      get 'v2/products/rules/count', params
     end
   end
 end

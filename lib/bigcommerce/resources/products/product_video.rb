@@ -14,11 +14,11 @@ module Bigcommerce
     property :name
 
     def self.count(product_id, params = {})
-      get "products/#{product_id}/videos/count", params
+      get "v2/products/#{product_id}/videos/count", params
     end
 
     def self.count_all(params = {})
-      get 'products/videos/count', params
+      get 'v2/products/videos/count', params
     end
   end
 end

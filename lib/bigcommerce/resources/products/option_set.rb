@@ -12,7 +12,7 @@ module Bigcommerce
     property :options
 
     def self.count(params = {})
-      get 'option_sets/count', params
+      get 'v2/option_sets/count', params
     end
   end
 end

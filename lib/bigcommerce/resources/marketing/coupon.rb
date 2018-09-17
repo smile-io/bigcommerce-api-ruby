@@ -24,7 +24,7 @@ module Bigcommerce
     property :shipping_methods
 
     def self.count(params = {})
-      get 'coupons/count', params
+      get 'v2/coupons/count', params
     end
   end
 end

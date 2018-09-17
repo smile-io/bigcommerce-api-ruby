@@ -69,7 +69,7 @@ module Bigcommerce
     property :count
 
     def self.count(params = {})
-      get 'orders/count', params
+      get 'v2/orders/count', params
     end
   end
 end

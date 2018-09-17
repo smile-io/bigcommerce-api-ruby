@@ -15,7 +15,7 @@ module Bigcommerce
     property :url
 
     def self.count(params = {})
-      get 'redirects/count', params
+      get 'v2/redirects/count', params
     end
   end
 end

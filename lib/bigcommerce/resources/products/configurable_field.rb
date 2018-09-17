@@ -21,11 +21,11 @@ module Bigcommerce
     property :sort_order
 
     def self.count(product_id, params = {})
-      get "products/#{product_id}/configurable_fields/count", params
+      get "v2/products/#{product_id}/configurable_fields/count", params
     end
 
     def self.count_all(params = {})
-      get 'products/configurable_fields/count', params
+      get 'v2/products/configurable_fields/count', params
     end
   end
 end

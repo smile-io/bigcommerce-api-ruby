@@ -17,7 +17,7 @@ module Bigcommerce
     property :search_keywords
 
     def self.count(params = {})
-      get 'brands/count', params
+      get 'v2/brands/count', params
     end
   end
 end
