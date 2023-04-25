@@ -13,12 +13,12 @@ module Bigcommerce
         conn.request :json
         conn.headers = HEADERS
         if config.auth == 'legacy'
-          conn.use Faraday::Request::BasicAuthentication, config.username, config.api_key
+          conn.use Faraday::Request::Authorization, config.username, config.api_key
         else
           conn.use Bigcommerce::Middleware::Auth, config
         end
         conn.use Bigcommerce::Middleware::HttpException
-        conn.use FaradayMiddleware::Gzip
+        conn.request :gzip
         conn.adapter Faraday.default_adapter
       end
     end

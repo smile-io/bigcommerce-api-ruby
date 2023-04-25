@@ -25,7 +25,7 @@ RSpec.describe Bigcommerce do
       end
 
       it 'should have the correct auth middleware' do
-        expect(middleware).to include(Faraday::Request::BasicAuthentication)
+        expect(middleware).to include(Faraday::Request::Authorization)
       end
     end
 
@@ -59,7 +59,7 @@ RSpec.describe Bigcommerce do
 
       expect(Bigcommerce.api.instance_variable_get('@builder')
                 .instance_variable_get('@handlers'))
-                .to include(Faraday::Request::BasicAuthentication)
+                .to include(Faraday::Request::Authorization)
 
       Bigcommerce.configure do |config|
         config.access_token = 'jksdgkjbhksjdb'
