@@ -4,8 +4,8 @@ PATH
     bigcommerce (1.0.1)
       faraday (< 3)
       faraday-gzip (< 2)
-      hashie (~> 3.4)
-      jwt (~> 1.5.4)
+      hashie (< 6)
+      jwt (< 3)
 
 GEM
   remote: https://rubygems.org/
@@ -21,9 +21,9 @@ GEM
       faraday (>= 1.0)
       zlib (~> 2.1)
     faraday-net_http (3.0.2)
-    hashie (3.6.0)
+    hashie (5.0.0)
     json (2.6.3)
-    jwt (1.5.6)
+    jwt (2.7.0)
     method_source (1.0.0)
     parallel (1.23.0)
     parser (3.2.2.1)
