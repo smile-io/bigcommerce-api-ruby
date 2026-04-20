@@ -3,7 +3,7 @@ PATH
   specs:
     bigcommerce (2.0.0)
       faraday (< 3)
-      faraday-gzip (< 2)
+      faraday-gzip (< 4)
       hashie (< 6)
       jwt (< 3)
 
@@ -18,9 +18,9 @@ GEM
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
-    faraday-gzip (1.0.0)
-      faraday (>= 1.0)
-      zlib (~> 2.1)
+    faraday-gzip (3.1.0)
+      faraday (>= 2.0, < 3)
+      zlib (~> 3.0)
     faraday-net_http (3.4.0)
       net-http (>= 0.5.0)
     hashie (5.0.0)
@@ -55,7 +55,7 @@ GEM
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
     uri (1.1.1)
-    zlib (2.1.1)
+    zlib (3.2.3)
 
 PLATFORMS
   arm64-darwin
@@ -76,7 +76,7 @@ CHECKSUMS
   diff-lcs (1.5.0) sha256=49b934001c8c6aedb37ba19daec5c634da27b318a7a3c654ae979d6ba1929b67
   docile (1.4.0) sha256=5f1734bde23721245c20c3d723e76c104208e1aa01277a69901ce770f0ebb8d3
   faraday (2.14.1) sha256=a43cceedc1e39d188f4d2cdd360a8aaa6a11da0c407052e426ba8d3fb42ef61c
-  faraday-gzip (1.0.0) sha256=f22b9d8259390d5fa2bd8bf65bfd9fbd724ac215d6358c115371e4e4f0bd10af
+  faraday-gzip (3.1.0) sha256=320783690be169f9b7ddde11598b77156951343753f66a9ab98b1f6694433ff8
   faraday-net_http (3.4.0) sha256=a1f1e4cd6a2cf21599c8221595e27582d9936819977bbd4089a601f24c64e54a
   hashie (5.0.0) sha256=9d6c4e51f2a36d4616cbc8a322d619a162d8f42815a792596039fc95595603da
   json (2.12.2) sha256=ba94a48ad265605c8fa9a50a5892f3ba6a02661aa010f638211f3cb36f44abf4
@@ -95,7 +95,7 @@ CHECKSUMS
   simplecov-html (0.12.3) sha256=4b1aad33259ffba8b29c6876c12db70e5750cb9df829486e4c6e5da4fa0aa07b
   simplecov_json_formatter (0.1.4) sha256=529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428
   uri (1.1.1) sha256=379fa58d27ffb1387eaada68c749d1426738bd0f654d812fcc07e7568f5c57c6
-  zlib (2.1.1) sha256=90cc35409141d2578d9495e4715758437af6481a3ab424b238a47821fe25ab8f
+  zlib (3.2.3) sha256=5bd316698b32f31a64ab910a8b6c282442ca1626a81bbd6a1674e8522e319c20
 
 BUNDLED WITH
-   2.6.9
+   2.7.1
