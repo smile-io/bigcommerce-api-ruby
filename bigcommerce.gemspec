@@ -22,6 +22,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "faraday", "< 3"
   s.add_dependency "faraday-gzip", "< 4"
-  s.add_dependency "hashie", "< 6"
+  s.add_dependency "hashie", "< 7"
   s.add_dependency "jwt", "< 4"
 end
